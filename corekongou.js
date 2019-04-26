@@ -29,12 +29,12 @@ class BattleCruiser extends Client {
 
 	Sortie() {
 		this.on('ready', () => {
-			this.editStatus('online', { name: 'Just booted up ...'});
+			this.editStatus('online', { name: 'Bot Loading...'});
 			setInterval(() => {
 				const time = this.getUptime();
-				this.editStatus('online', { name: `with Saya for ${time.days} : ${time.hours}`})
+				this.editStatus('online', { name: `Pemandu Lagu Ansel})
 			}, 60000);
-			console.log(`Admiral, Kongou is now Operational with ${this.guilds.size} Port(s) Accessible.`);
+			console.log(` ${this.guilds.size} Port(s) Accessible.`);
 		});
 		this.on('error', this.cannons.fire);
 		this.on('guildUnavailable', (guild) => this.unavailable.add(guild.id));
@@ -58,7 +58,7 @@ class BattleCruiser extends Client {
 				setTimeout(() => this.ratelimit.delete(msg.author.id), 1250);
 				if (msg.content.match(this.mentionregex)) {
 					if (msg.content.split(' ').length === 1) {
-						msg.channel.createMessage(`Seems like you forgot my prefix Admiral. The prefix in this server is **${settings.prefix}**`).catch(this.cannons.fire);
+						msg.channel.createMessage(`Prefix Bot **${settings.prefix}**`).catch(this.cannons.fire);
 					    return;
                     }
                 }
