@@ -32,7 +32,7 @@ class BattleCruiser extends Client {
 			this.editStatus('online', { name: 'Just booted up ...'});
 			setInterval(() => {
 				const time = this.getUptime();
-				this.editStatus('online', { name: `Pemandu Lagu Ansel`})
+				this.editStatus('online', { name: `Pemandu Lagu RaraMKS`})
 			}, 60000);
 			console.log(`Admiral, Kongou is now Operational with ${this.guilds.size} Port(s) Accessible.`);
 		});
