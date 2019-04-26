@@ -15,7 +15,7 @@ class Queue extends Handler {
             if (this.Kongou.voiceConnections.has(msg.channel.guild.id)) {
                 const queue = this.Kongou.queue.get(msg.channel.guild.id);
                 if (msg.channel.id !== queue.textChannel)
-                    return msg.channel.createMessage(`Admiral, the music player is currently binded in <#${queue.textChannel.id}>`)
+                    return msg.channel.createMessage(`the music player is currently binded in <#${queue.textChannel.id}>`)
                 if (queue.songs.length) {
                     const songs = queue.songs.map(x => {
                         if (x.title === queue.songs[0].title) {
