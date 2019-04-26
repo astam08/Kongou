@@ -11,7 +11,7 @@ class Reboot extends Handler {
     };
 
     async run(msg) {
-    	await msg.channel.createMessage(`Ok Admiral, I will be right back ♪`);
+    	await msg.channel.createMessage(`Ok Bot akan restart Ulang ♪`);
         process.exit();
     };
 }
