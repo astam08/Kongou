@@ -21,7 +21,7 @@ class Player {
 		}
 		this.voiceConnection.play(this.Kongou.ytdl(this.songs[0].url), { inlineVolume: true, sampleRate: 128000 });
 		this.voiceConnection.setVolume(Math.pow(0.60, 1.660964));
-		await this.textChannel.createMessage(`Admiral, The Current Song is \`\`\`diff\n- ${this.songs[0].title}\`\`\``);
+		await this.textChannel.createMessage(`Lagu Berikut nya Adalah \`\`\`diff\n- ${this.songs[0].title}\`\`\``);
 	};
 }
 
