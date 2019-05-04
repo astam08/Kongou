@@ -1,4 +1,4 @@
 {
-	"owners": process.env.owners,
-	"prefix": process.env.PREFIX
+	"owners": ["402367348364935169"],
+	"prefix": "m!"
 }
